@@ -7,6 +7,8 @@
 
 > Decode RPC Struct RPC_SERVER_INTERFACE, take combase.dll as an example
 
+Windows Version of Combase.dll: 10.0.19045
+
 ## Author
 
 👤 **holdyounger**
