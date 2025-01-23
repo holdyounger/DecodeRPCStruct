@@ -48,4 +48,4 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: DecodeRPCStructOutput
-        path: "Debug/*"
+        path: "x64/Debug/*"
