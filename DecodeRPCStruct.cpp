@@ -316,7 +316,7 @@ std::wstring GetModulePath(const HMODULE hModule) {
 BOOL CALLBACK SymbolCallback(PSYMBOL_INFO pSymInfo, ULONG SymbolSize, PVOID UserContext) {
     if ((ULONG64)UserContext == pSymInfo->Address)
     {
-        std::cout  << GREEN << "函数名: " << pSymInfo->Name << ", 地址: " << std::hex << (LPVOID)pSymInfo->Address << RESET << std::endl;
+        std::cout  << GREEN << "Function: " << pSymInfo->Name << ", Addr: " << std::hex << (LPVOID)pSymInfo->Address << RESET << std::endl;
     }
     return TRUE;
 }
