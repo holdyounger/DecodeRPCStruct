@@ -11,6 +11,17 @@ on:
   pull_request:
     branches: [ "main" ]
 
+inputs:
+  build_configuration:
+    description: "Build configuration (Debug or Release)"
+    required: true
+    default: "Release"
+
+env:
+  SOLUTION_FILE_PATH: DecodeRPCStruct.vcxproj
+  # 使用输入参数
+  BUILD_CONFIGURATION: ${{ inputs.build_configuration }}  
+
 env:
   # Path to the solution file relative to the root of the project.
   SOLUTION_FILE_PATH: DecodeRPCStruct.vcxproj
